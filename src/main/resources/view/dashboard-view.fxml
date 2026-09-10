@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="main.java.com.cineplex.carteleraadministrador.controller.DashboardController">
+    <stylesheets>
+        <URL value="@/main/resources/css/Styles.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="115.0" fitWidth="127.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cinePlexlogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="199.0" layoutY="21.0" prefHeight="18.0" prefWidth="293.0" text="Bienvenido a la pagina principal de CinePlex" />
+      <GridPane layoutX="134.0" layoutY="55.0" prefHeight="345.0" prefWidth="457.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="10.0" prefWidth="68.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="405.0" minWidth="10.0" prefWidth="398.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="333.0" minHeight="10.0" prefHeight="333.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="12.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView prefHeight="229.0" prefWidth="393.0" GridPane.columnIndex="1">
+              <columns>
+                <TableColumn prefWidth="92.0" text="C1" />
+                <TableColumn text="C2" />
+                  <TableColumn prefWidth="110.0" text="Column X" />
+              </columns>
+            </TableView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
