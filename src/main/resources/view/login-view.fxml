@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="main.java.com.cineplex.carteleraadministrador.controller.LoginController">
+    <stylesheets>
+        <URL value="@/main/resources/css/Styles.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="313.0" fitWidth="356.0" layoutX="133.0" layoutY="-80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cinePlexlogo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtFieldEmail" layoutX="157.0" layoutY="174.0" prefHeight="26.0" prefWidth="234.0" promptText="Email" />
+      <Label layoutX="161.0" layoutY="143.0" prefHeight="18.0" prefWidth="121.0" text="correo electronico" />
+      <Label layoutX="161.0" layoutY="215.0" prefHeight="18.0" prefWidth="121.0" text="contraseña" />
+      <Button fx:id="btnIniciarSesion" layoutX="161.0" layoutY="284.0" mnemonicParsing="false" onAction="#handleLogin" text="inciar sesion" />
+      <Button fx:id="btnRegistrarse" layoutX="161.0" layoutY="351.0" mnemonicParsing="false" onAction="#handleRegister" text="registrarse" />
+      <Label layoutX="161.0" layoutY="322.0" prefHeight="18.0" prefWidth="242.0" text="no tienes una cuenta? registrate aqui:" />
+      <PasswordField fx:id="pwField" layoutX="157.0" layoutY="243.0" promptText="contraseña" />
+   </children>
+</AnchorPane>

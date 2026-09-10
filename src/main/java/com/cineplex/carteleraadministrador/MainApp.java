@@ -8,13 +8,27 @@ package main.java.com.cineplex.carteleraadministrador;
  *
  * @author tv
  */
-public class MainApp {
 
-    /**
-     * @param args the command line arguments
-     */
+
+import javafx.application.Application;
+import static javafx.application.Application.launch;
+import javafx.stage.Stage;
+import main.java.com.cineplex.carteleraadministrador.util.SceneManager;
+
+public class MainApp extends Application {
+
+    private Stage stage;
+    
+    @Override
+    public void start(Stage stage) throws Exception{
+        this.stage = stage;
+        SceneManager sceneManager = new SceneManager(stage);
+        sceneManager.showLoginView();
+        stage.show();
+    }
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        launch();
     }
     
 }
